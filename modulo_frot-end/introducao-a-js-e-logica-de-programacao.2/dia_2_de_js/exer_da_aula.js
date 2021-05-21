@@ -16,7 +16,7 @@ let roundedNumber = Math.ceil(randomNumber);
 
 
 
-let pri = Math.ceil(Math.random() * 60);
+/*let pri = Math.ceil(Math.random() * 60);
 let seg = Math.ceil(Math.random() * 60);
 let ter = Math.ceil(Math.random() * 60);
 let quar = Math.ceil(Math.random() * 60);
@@ -38,3 +38,5 @@ for(let index = 0; index <= numeroLoto.length; index += 1) {
 };
 
 console.log(`indice: ${index} numero: ${numeroLoto[index]}`);
+*/
+
