@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+  font-size: 100%;
+  /* vai se adequar 100% a fornte do determinado navegador, pois conforme o navegador o tamanho da fonte muda */
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+  border-radius: 10px solid black;
+  width: 100%;
+  height: 90px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px solid black;
+  width: auto;
+  height: auto;
+}
+
+.menu-container {
+  display: flex;
+  border-radius: 5px solid black;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+  background-clip: content-box;
+  align-items: flex-start;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px solid black;
+  height: auto;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+  width: auto;
+  height: auto;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+a:hover {
+  opacity: 1;
+}
+
+a:visited, a:hover, a:active {
+  color: inherit;
+  /* justify-content: ;
+  flex-direction: ; */
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
