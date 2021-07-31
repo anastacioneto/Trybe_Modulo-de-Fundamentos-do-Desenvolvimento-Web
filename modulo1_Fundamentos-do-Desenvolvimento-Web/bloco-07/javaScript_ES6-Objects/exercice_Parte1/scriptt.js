@@ -1,59 +1,63 @@
-// const order = {
-//   name: 'Rafael Andrade',
-//   phoneNumber: '11-98763-1416',
-//   address: {
-//     street: 'Rua das Flores',
-//     number: '389',
-//     apartment: '701',
-//   },
-//   order: {
-//     pizza: {
-//       margherita: {
-//         amount: 1,
-//         price: 25,
-//       },
-//       pepperoni: {
-//         amount: 1,
-//         price: 20,
-//       }
-//     },
-//     drinks: {
-//       coke: {
-//         type: 'Coca-Cola Zero',
-//         price: 10,
-//         amount: 1,
-//       }
-//     },
-//     delivery: {
-//       deliveryPerson: 'Ana Silveira',
-//       price: 5,
-//     }
-//   },
-//   payment: {
-//     total: 60,
-//   },
+// const student = {
+//   Html: 'Muito Bom',
+//   Css: 'Bom',
+//   JavaScript: 'Ótimo',
+//   SoftSkill: 'Ótimo',
 // };
 
-// const customerInfo = (order) => {
-//   // Adicione abaixo as informações necessárias.
-
-// }
-
-// customerInfo(order);
-
-// const orderModifier = (order) => {
-//   // Adicione abaixo as informações necessárias.
-
-// }
-
-// orderModifier(order);
-
-
-// const customer = {
-//   firstName: 'Roberto',
-//   age: 22,
-//   job: 'Teacher',
+// const listSkillsValuesWithFor = (obj) => {
+//   const skills = [];
+//   for(skill in obj) {
+//     skills.push(obj[skill]);
+//   }
+//   return skills;
 // };
 
+// const listSkillsValuesWithValues = (obj) => Object.values(obj);
 
+// // Sem Object.values
+// console.log(listSkillsValuesWithFor(student));
 
+// // Com Object.values
+// console.log(listSkillsValuesWithValues(student));
+///////////////////////////////////////////////
+
+// const países = {
+//   França: 'Paris',
+//   Brasil: 'Brasília',
+//   Espanha: 'Madrid',
+//   Portugal: 'Lisboa',
+// };
+// const pairKeyValue = Object.entries(países);
+// for(index in pairKeyValue) {
+//   console.log('País:', pairKeyValue[index][0]);
+//   console.log('Capital:', pairKeyValue[index][1]);
+//   console.log('           ');
+// };
+// console.log(pairKeyValue);
+////////////////////////////////////////////////////////////
+
+// A função recebe um número qualquer de parâmetros. Todos são agregados como valores para adicionar ao objeto de destino!
+
+// Object.assign(destino, objeto1);
+// Object.assign(destino, objeto1, objeto2);
+// Object.assign(destino, objeto1, objeto2, objeto3, objeto4);
+
+const person = {
+  name: 'Alberto',
+  lastName: 'Gomes',
+  age: 20,
+};
+
+const info = {
+  age: 23,
+  job: 'engenheiro',
+};
+
+const family = {
+  children: ['Maria', 'João'],
+  wife: 'Ana',
+};
+
+Object.assign(person, info, family)
+console.log(person)

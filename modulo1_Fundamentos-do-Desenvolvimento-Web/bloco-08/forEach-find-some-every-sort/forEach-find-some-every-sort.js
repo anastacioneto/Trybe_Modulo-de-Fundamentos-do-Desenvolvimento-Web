@@ -16,6 +16,7 @@
 // console.log(names); // [ 'BIANCA', 'CAMILA', 'FERNANDO', 'ANA ROBERTA' ]
 // ///////////////////////////////////////////////////////////////////////////////////
 
+// Use o método forEach chamando a callback showEmailList para apresentar os emails
 // const emailListInData = [
 //   'roberta@email.com',
 //   'paulo@email.com',
@@ -43,7 +44,7 @@
 // console.log(verifyEven(9)); // False
 // console.log(verifyEven(14)); // True
 
-// // Outra forma de ser realizada sem a necessidade de criar uma nova função.
+// Outra forma de ser realizada sem a necessidade de criar uma nova função.
 // const isEven2 = numbers.find((number) => number % 2 === 0);
 
 // console.log(isEven2); // 30
@@ -56,7 +57,7 @@
 // });
 // console.log(findDivisibleBy3And5);
 
-// 2 - Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
+// // 2 - Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
 // const names = ['João', 'Fernando', 'Maria'];
 
 // const findNameWithFiveLetters = names.find((name) => {
@@ -128,3 +129,50 @@
 
 // console.log(people);
 ////////////////////////////////////////////////
+
+// const students = [
+//   { name: 'Maria', grade: 70, approved: '' },
+//   { name: 'José', grade: 56, approved: '' },
+//   { name: 'Roberto', grade: 90, approved: '' },
+//   { name: 'Ana', grade: 81, approved: '' },
+// ];
+
+// function verifyGrades() {
+//   for (let i = 0; i < students.length; i += 1) {
+//     const student = students[i];
+//     if (student.grade >= 60) {
+//       student.approved = 'Aprovado';
+//     } else {
+//       student.approved = 'Recuperação';
+//     }
+//   }
+// }
+
+// function verifyGrades() {
+//   students.forEach((student, index) => {
+//     if (student.grade >= 60) {
+//       students[index].approved = 'Aprovado';
+//     } else {
+//       students[index].approved = 'Recuperação';
+//     }
+//   });
+// }
+
+// verifyGrades();
+
+// console.log(students);
+///////////////////////////////////////////
+
+// const numbers = [11, 24, 39, 47, 50, 62, 75, 81, 96, 100];
+
+// let firstMultipleOf5;
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] % 5 === 0) {
+//     firstMultipleOf5 = numbers[index];
+//     break;
+//   }
+// }
+
+// const firstMultipleOf5 = numbers.find((number) => number % 5 === 0);
+
+// console.log(firstMultipleOf5);
